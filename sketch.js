@@ -1,14 +1,16 @@
 
 let WFont;
 
+function preload() {
+  WFont = loadFont("assets/PlaywriteCU-VariableFont_wght.ttf")
+}
+
 function setup() {
   createCanvas(400, 400);
   textSize(45)
 }
 
-function preload() {
-  WFont = loadFont("assets/Playwrite_CU.zip")
-}
+
 
 function draw() {
   background(141, 19, 19)
