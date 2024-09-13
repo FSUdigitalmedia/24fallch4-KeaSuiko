@@ -9,7 +9,6 @@ function preload() {
 
 function setup() {
   createCanvas(400, 400);
-  textSize(25)
 }
 
 
@@ -17,7 +16,9 @@ function draw() {
   background(141, 19, 19)
   fill(255, 255, 255)
   textFont(WFont)
-  let yPos = map2(y, 0, height, 0, height, SINUSOIDAL, BOTH)
+  let d= map(mouseY, 0, width, 0, 1)
+  textSize(y)
+  let yPos = map2(y, 0, width, 0, width, SINUSOIDAL, BOTH)
   text("WILKERSON", 70, yPos)
 
   if (y > height || y < 0){
